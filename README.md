@@ -1,3 +1,5 @@
+- All Credits come to the creator of the library. I only fork it in order to add some comments and upload the last version to maven (with Bintray)
+
 # Android Data Binding + RecyclerView
 Using Recyclerview with the new Android Data Binding framework.
 
@@ -16,17 +18,33 @@ Just clone this repository and start playing with it! If you want to use some pa
 ```gradle
 classpath 'com.android.tools.build:gradle:1.5.0'
 ```
+And Also :
+```
+allprojects {
+    repositories {
+        maven {
+            url "http://dl.bintray.com/joxad/maven"
+        }
+    }
+}
+```
+
+Project's build.gradle
+
 
 - In your app build.gradle add:
-    
+
+```
+dependencies {
+    compile 'com.joxad.github:recyclerview-binding:1.0.0'
+}
+```    
     
 ```gradle
     dataBinding {
         enabled = true
     }
 ```
-
-
 
 ### Modify your layout
 

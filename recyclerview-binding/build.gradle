@@ -7,8 +7,8 @@ android {
     defaultConfig {
         minSdkVersion 7
         targetSdkVersion 23
-        versionCode 1
-        versionName "1.0"
+        versionCode buildVersionCode()
+        versionName VERSION_NAME
     }
     buildTypes {
         release {
@@ -34,6 +34,4 @@ dependencies {
 }
 
 
-
-
-apply from: 'https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle'
+apply from: new File('../gradletasks/bintray_upload.gradle')

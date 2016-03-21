@@ -1,5 +1,9 @@
 package net.droidlabs.mvvm.recyclerview.adapter.binder;
 
+/***
+ * Base Classe for all the BindableItems
+ * @param <T>
+ */
 public class ItemBinderBase<T> implements ItemBinder<T>
 {
     protected final int bindingVariable;
